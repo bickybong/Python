@@ -1,0 +1,37 @@
+.group1  div :hover{
+    background-color: blue;
+}
+
+main:nth-child(2n){
+    background-color: rebeccapurple;
+
+}
+
+.emojify::before {
+    content: '😎 🥸 🤓';
+}
+
+  .emojify::after {
+    content: '🤓 🥸 😎';
+}
+
+[class^=gra]{
+    background-color: salmon;
+}
+
+[class$='3']{
+    background-color: gold;
+}
+
+[class*=child]{
+    font-weight: bold;
+}
+
+button:active{
+    color: blueviolet;
+    background-color: brown;
+}
+
+button:hover{
+    background-color: darkcyan;
+}
