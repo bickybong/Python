@@ -1,3 +1,28 @@
+:root {
+    --main-bg: red;
+  }
+  
+  .cool-paragraph {
+    background-color: var(--main-bg, gold);
+  }
+  
+  .boring-paragraph {
+    background-color: var(--main-bg);
+  }
+
+.parent{
+    position: relative;
+    background: linear-gradient(180deg, blue, red);
+    height: 1000px;
+}
+
+button{
+    position: sticky;
+    padding: 5px;
+    top: -1px;
+    left: 10rem;
+}
+
 .group1  div :hover{
     background-color: blue;
 }
@@ -6,6 +31,7 @@ main:nth-child(2n){
     background-color: rebeccapurple;
 
 }
+
 
 .emojify::before {
     content: '😎 🥸 🤓';
