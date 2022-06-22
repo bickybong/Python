@@ -1,63 +1,19 @@
-:root {
-    --main-bg: red;
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
   }
   
-  .cool-paragraph {
-    background-color: var(--main-bg, gold);
+  .item {
+    background-color: orange;
+    border: 1px solid black;
+    text-align: center;
   }
   
-  .boring-paragraph {
-    background-color: var(--main-bg);
+  .first-row {
+    background-color: pink; 
   }
-
-.parent{
-    position: relative;
-    background: linear-gradient(180deg, blue, red);
-    height: 1000px;
-}
-
-button{
-    position: sticky;
-    padding: 5px;
-    top: -1px;
-    left: 10rem;
-}
-
-.group1  div :hover{
-    background-color: blue;
-}
-
-main:nth-child(2n){
-    background-color: rebeccapurple;
-
-}
-
-
-.emojify::before {
-    content: '😎 🥸 🤓';
-}
-
-  .emojify::after {
-    content: '🤓 🥸 😎';
-}
-
-[class^=gra]{
-    background-color: salmon;
-}
-
-[class$='3']{
-    background-color: gold;
-}
-
-[class*=child]{
-    font-weight: bold;
-}
-
-button:active{
-    color: blueviolet;
-    background-color: brown;
-}
-
-button:hover{
-    background-color: darkcyan;
-}
+  
+  .last-column {
+    background-color: lightblue; 
+  }
